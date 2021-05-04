@@ -33,7 +33,7 @@ export default class ExercisesList extends Component {
 
   componentDidMount() {
     axios
-      .get("/exercises")
+      .get("https://exercise-logging-app.herokuapp.com/exercises")
       .then((response) => {
         this.setState({ exercises: response.data });
       })
